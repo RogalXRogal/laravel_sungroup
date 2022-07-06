@@ -16,18 +16,24 @@
 </head>
 <body>
     <main>
+    @if($errors->any())
+        @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+        @endforeach
+    @endif
         <header>
             <div class="left_header">
                 <h2>SunPage</h2>
             </div>
             <div class="right_header">
-                <a href="#" class="blue_button">Pokaż wpisy</a>
+                <a href="/show_db" class="blue_button">Pokaż wpisy</a>
             </div>
         </header>
         <section id="contact">
             <div id="formulage">
                 <p>Napisz do nas</p>
-                <form action="#" method="post">
+                <form action="/" method="post">
+                    @csrf
                     <div id="first_grid">
                         <input type="text" name="name" placeholder="Imię">
                         <input type="text" name="surrname" placeholder="Nazwisko">
@@ -51,14 +57,14 @@
     <footer>
         <div>
             <h2>SunPage</h2>
-            <a href="#" id="show_db">Pokaż wpisy</a>
+            <a href="/show_db" id="show_db">Pokaż wpisy</a>
         </div>
         <hr>
         <div id="social_buttons">
             <p>&copy; Copyrights 2021 Sungroup</p>
-            <a href="#"><img src="linkedin.png" alt="linkedin"></a>
-            <a href="#"><img src="twitter.png" alt="twitter"></a>
-            <a href="#"><img src="facebook.png" alt="facebook"></a>
+            <a href="#"><img src="photos/linkedin.png" alt="linkedin"></a>
+            <a href="#"><img src="photos/twitter.png" alt="twitter"></a>
+            <a href="#"><img src="photos/facebook.png" alt="facebook"></a>
         </div>
     </footer>
 </body>
