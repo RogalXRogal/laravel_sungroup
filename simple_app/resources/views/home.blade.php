@@ -33,21 +33,21 @@
                 <p>Napisz do nas</p>
                 <form action="/" method="post">
                     @csrf
-                    <div id="first_grid">
+                    <div id="form_grid">
                         <input type="text" name="name" placeholder="Imię">
                         <input type="text" name="surname" placeholder="Nazwisko">
                         <input type="email" name="email" placeholder="Adres e-mail">
                         <input type="number" name="number" placeholder="Numer telefonu">
                         <textarea name="message" cols="50" rows="12" placeholder="Twoja wiadomość"></textarea>
                     </div>
-                    <div id="second_grid">
+                    <div id="checkbox_wrapper">
                         <label for="check">
                             <input type="checkbox" name="check" id="check">
                             Zapoznałem się z regulaminem i wyrażam zgodę na przetwarzanie moich danych osobowych przez
                             Sungroup.pl
                         </label>
                     </div>
-                    <button type="submit">Wyślij wiadomość</button>
+                    <button type="submit" class="blue_button">Wyślij wiadomość</button>
                 </form>
             </div>
             <div id="contact_image"></div>

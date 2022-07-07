@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 main {
     width: 70%;
     margin: 0 auto;
@@ -5,7 +9,6 @@ main {
 }
 
 .blue_button {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: white;
@@ -21,7 +24,6 @@ main {
 
 .left_header {
     float: left;
-    font-family: 'Poppins', sans-serif;
 }
 
 .right_header {
@@ -45,28 +47,37 @@ section {
     padding: 40px;
 }
 
-#formulage p{
-    font-weight: 600px;
+#formulage p {
+    font-weight: 600;
     font-size: 28px;
     line-height: 42px;
     font-style: normal;
-    font-family: 'Poppins', sans-serif;
 }
 
-#first_grid {
+#form_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 16px;
+}
+
+#form_grid input {
+    padding: 14px 8px;
+    border-radius: 2px;
+    border: 1px solid #ECEDF0;
     font-family: 'Inter';
 }
 
-#first_grid input {
-    padding: 13px 17px;
-    font-size: 13px;
-    border-radius: 2px;
-    border: 1px solid #ECEDF0;
-    
+input::placeholder {
+    padding-left: 10px;
+    font-family: 'Inter';
+    font-size: 14px;
+}
+
+textarea::placeholder {
+    font-family: 'Inter';
+    font-size: 14px;
+
 }
 
 input::-webkit-outer-spin-button,
@@ -76,7 +87,6 @@ input::-webkit-inner-spin-button {
 }
 
 textarea {
-    width: 100%;
     border-radius: 2px;
     border: 1px solid #ECEDF0;
     resize: none;
@@ -84,19 +94,18 @@ textarea {
     font-family: 'Inter';
     padding: 13px 17px;
     box-sizing: border-box;
-    font-size: 13px;
 }
 
-#second_grid{
+#checkbox_wrapper {
     padding-top: 25px;
 }
 
-#check{
+#check {
     width: 15px;
     height: 15px;
 }
 
-#second_grid label{
+#checkbox_wrapper label {
     font-family: 'Inter';
     line-height: 26px;
     font-size: 14px;
@@ -105,20 +114,19 @@ textarea {
     padding-left: 25px;
 }
 
-form button{
+form button {
     background-color: #6E9EFF;
     border-radius: 4px;
     padding: 16px 32px;
     color: white;
     border: none;
-    font-family: 'Poppins', sans-serif;
     line-height: 24px;
     font-size: 16px;
     float: right;
     margin-top: 30px;
 }
 
-form button:hover{
+form button:hover {
     opacity: 0.75;
 }
 
@@ -131,28 +139,25 @@ form button:hover{
     border-radius: 8px;
 }
 
-footer{
+footer {
     background-color: #F9F9FA;
-    width: 100%;
     margin-top: 128px;
 }
 
-footer div{
+footer div {
     margin: 0 auto;
     width: 70%;
     height: 100px;
 }
 
-footer div h2{
+footer div h2 {
     float: left;
-    font-family: 'Poppins', sans-serif;
     padding-top: 20px;
 }
 
-#show_db{
+#show_db {
     color: #858993;
     float: right;
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
@@ -160,11 +165,11 @@ footer div h2{
     text-decoration: none;
 }
 
-footer hr{
+footer hr {
     border: 1px solid #ECEDF0;
 }
 
-footer div p{
+footer div p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -175,7 +180,7 @@ footer div p{
     float: left;
 }
 
-#social_buttons a{
+#social_buttons a {
     margin-left: 20px;
     width: 20px;
     height: 20px;
@@ -186,7 +191,7 @@ footer div p{
     margin-top: 30px;
 }
 
-li{
+li {
     background-color: #FF6347;
     font-size: 20px;
 }
