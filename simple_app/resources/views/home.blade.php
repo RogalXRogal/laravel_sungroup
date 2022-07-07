@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kamil Rogalski">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -36,7 +35,7 @@
                     @csrf
                     <div id="first_grid">
                         <input type="text" name="name" placeholder="Imię">
-                        <input type="text" name="surrname" placeholder="Nazwisko">
+                        <input type="text" name="surname" placeholder="Nazwisko">
                         <input type="email" name="email" placeholder="Adres e-mail">
                         <input type="number" name="number" placeholder="Numer telefonu">
                         <textarea name="message" cols="50" rows="12" placeholder="Twoja wiadomość"></textarea>
@@ -62,9 +61,9 @@
         <hr>
         <div id="social_buttons">
             <p>&copy; Copyrights 2021 Sungroup</p>
-            <a href="#"><img src="photos/linkedin.png" alt="linkedin"></a>
-            <a href="#"><img src="photos/twitter.png" alt="twitter"></a>
-            <a href="#"><img src="photos/facebook.png" alt="facebook"></a>
+            <a href="https://pl.linkedin.com/company/agencjainteraktywnasungroup" target="_blank"><img src="photos/linkedin.png" alt="linkedin"></a>
+            <a href="https://twitter.com/home" target="_blank"><img src="photos/twitter.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/SunGroupPL" target="_blank"><img src="photos/facebook.png" alt="facebook"></a>
         </div>
     </footer>
 </body>
