@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('form_db', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('surrname');
+            $table->string('surname');
             $table->string('email');
             $table->integer('number');
             $table->string('message');
