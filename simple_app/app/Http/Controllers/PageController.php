@@ -19,11 +19,15 @@ class PageController extends Controller
     public function store(Request $request){
         $request->validate([
             'name'=>'required',
-            'surrname'=>'required',
+            'surname'=>'required',
             'email'=>'required',
-            'number'=>'required|min:8|max:8',
+            'number'=>'required|min:9|max:9',
+            'message'=>'max:190',
             'check'=>'required',
         ]);
-        dd($request->all());
+        
+        Form_db::create($request->all());
+
+        return view('accepted');
     }
 }
